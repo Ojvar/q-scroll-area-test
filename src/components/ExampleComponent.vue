@@ -1,23 +1,7 @@
 <template>
-  <div>
-    <div
-      style="
-        display: flex;
-        min-width: 700px;
-        max-width: 900px;
-        width: 100%;
-        height: 400px;
-      "
-    >
-      <q-calendar-day
-        ref="calender"
-        v-model="selectedDate"
-        view="week"
-        animated
-        bordered
-      >
-      </q-calendar-day>
-    </div>
+  <div class="row" style="display: flex; min-width: 700px; width: 90%">
+    <q-calendar-day ref="calender" v-model="selectedDate" view="week" animated bordered>
+    </q-calendar-day>
   </div>
 </template>
 
